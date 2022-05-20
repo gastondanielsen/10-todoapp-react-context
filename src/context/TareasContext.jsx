@@ -1,11 +1,10 @@
 import { createContext, useState } from "react";
-import { list } from "../utils/data";
 
 const TareasContext = createContext();
 
 const TareasProvider = ({children}) => {
     
-    const [tareas, setTareas] =  useState(list);
+    const [tareas, setTareas] =  useState([]);
     const [edit, setEdit] = useState(null);
 
     // CREAR UNA NUEVA TAREA
